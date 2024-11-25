@@ -1,0 +1,124 @@
+:root {
+	--primary-font: Pacifico, cursive;
+	--second-font: Righteous, cursive;
+	--ternary-font: "PT Sans Caption", sans-serif;
+	--bg-page-color: #f7ecde;
+	--primary-color: #352e28;
+	--btn-font-color: #ffffff;
+	--btn-bg: #d1512d;
+	--btn-hover-bg: #bb4120;
+	--btn-hover-border: #a03315;
+}
+* {
+	box-sizing: border-box;
+}
+label {
+	cursor: default;
+}
+body {
+	font-family: var(--ternary-font);
+	background-color: var(--bg-page-color);
+}
+.head-line div h1::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 25%;
+	left: 0;
+	bottom: 5px;
+	background-color: #fec260;
+	z-index: -1;
+	transition: height 0.3s;
+	border-end-end-radius: 5px;
+}
+.head-line div h1:hover::before {
+	height: 60%;
+}
+h1 {
+	font-family: var(--primary-font);
+	font-size: 50px;
+	color: var(--primary-color);
+	isolation: isolate;
+	transition: height 0.3s ease;
+	display: inline-block;
+	cursor: default;
+}
+.bookmark-base {
+	border-color: var(--primary-color);
+	border-width: 2px 0 2px 0;
+	border-style: dotted;
+}
+.bookmark-base h2 {
+	font-family: var(--second-font);
+	font-size: 25px;
+	background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: default;
+}
+.btn-submit {
+	color: var(--btn-font-color);
+	background-color: var(--btn-bg);
+	border: 1px solid var(--btn-bg);
+}
+.btn-submit:hover {
+	color: var(--btn-font-color);
+	background-color: var(--btn-hover-bg);
+	border: 1px solid var(--btn-hover-border);
+}
+.btn-delete {
+    color: var(--btn-font-color);
+    background-color: #eb1d36;
+    border: 1px solid #eb1d36;
+}
+.btn-delete:hover {
+    color: var(--btn-font-color);
+    background-color: #d30820;
+    border: 1px solid #ba081d;
+}
+table {
+	vertical-align: middle !important;
+}
+.btn-visit {
+    color: var(--btn-font-color);
+    background-color: #9eb23b;
+    border: 1px solid #9eb23b;
+}
+.btn-visit:hover {
+    color: var(--btn-font-color);
+    background-color: #8a9e23;
+    border: 1px solid #6e8018;
+}
+.box-info {
+	background-color: #0007;
+}
+.box-content {
+	width: 500px;
+	z-index: 5;
+}
+.box-content p {
+	font-family: "Bree Serif", serif;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #352e28;
+}
+.rules li {
+	font-size: 18px;
+	padding-top: 10px;
+}
+.rules i {
+	color: var(--btn-hover-bg);
+}
+.circles span {
+	width: 20px;
+	height: 20px;
+}
+.circles span:nth-child(1) {
+	background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+	background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+	background-color: #4db748;
+}
